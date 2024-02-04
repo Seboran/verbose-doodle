@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import solidPlugin from 'vite-plugin-solid'
+import { resolve } from 'path'
 // import devtools from 'solid-devtools/vite';
 
 export default defineConfig({
@@ -17,12 +18,12 @@ export default defineConfig({
   build: {
     target: 'esnext',
     lib: {
-      entry: './lib/index.ts',
+      entry: resolve(__dirname, './lib/index.tsx'),
       name: 'Solid components',
       fileName: 'solid-components',
     },
     rollupOptions: {
-      external: ['solidjs'],
+      external: ['solid-js'],
     },
   },
 })

@@ -1,7 +1,15 @@
+import { createModelComponent } from 'solid-components'
 import { For } from 'solid-js'
 import { createStore } from 'solid-js/store'
 
 type Todo = { id: number; text: string; completed: boolean }
+
+interface TacheModel {
+  nom: string
+  fait: boolean
+}
+
+const TacheComponent = createModelComponent<TacheModel>()
 
 export const TodoList = () => {
   let input!: HTMLInputElement
@@ -28,6 +36,7 @@ export const TodoList = () => {
         </button>
       </div>
       <div>
+        <TacheComponent nom="bonjour" fait />
         <For each={todos}>
           {(todo) => {
             const { id, text } = todo

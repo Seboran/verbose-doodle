@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["vite/client", "vitest/globals"],
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "outDir": "dist",
+    "declarationDir": "./dist"
+  },
+  "include": ["lib/index.tsx"]
+}
