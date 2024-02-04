@@ -28,7 +28,4 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile  --prefer-offline --ignore-scripts
       - name: 'Test'
-        run: npx vitest --coverage.enabled --coverage.provider=v8 --coverage.reporter=json-summary --coverage.reporter=json
-      - name: 'Report Coverage'
-        if: always() # Also gepnpnerate the report if tests are failing
-        uses: davelosert/vitest-coverage-report-action@v2
+        run: pnpm test
