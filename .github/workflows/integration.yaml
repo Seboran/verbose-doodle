@@ -1,0 +1,19 @@
+name: Prettier, Test, Build
+on: push
+permissions:
+  # Required to checkout the code
+  contents: read
+  # Required to put a comment into the pull-request
+  pull-requests: write
+
+jobs:
+  prettier:
+    uses: ./.github/workflows/prettier.yaml
+
+  test:
+    needs: [prettier]
+    uses: ./.github/workflows/test.yaml
+
+  build:
+    needs: [test]
+    uses: ./.github/workflows/build.yaml
