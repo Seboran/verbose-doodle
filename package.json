@@ -9,10 +9,9 @@
   },
   "scripts": {
     "build": "pnpm -r build",
-    "test": "vitest run",
-    "test:playwright": "pnpm -C ./packages/app-e2e run test:playwright",
-    "format:check": "prettier --check .",
-    "coverage": "vitest run --coverage"
+    "test": "pnpm -r test",
+    "test:watch": "pnpm -r --parallel test:watch",
+    "format:check": "prettier --check ."
   },
   "keywords": [
     "pnpm",
