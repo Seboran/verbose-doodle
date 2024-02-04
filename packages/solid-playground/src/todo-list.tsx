@@ -1,17 +1,17 @@
-import { For } from 'solid-js';
-import { createStore } from 'solid-js/store';
+import { For } from 'solid-js'
+import { createStore } from 'solid-js/store'
 
-type Todo = { id: number; text: string; completed: boolean };
+type Todo = { id: number; text: string; completed: boolean }
 
 export const TodoList = () => {
-  let input!: HTMLInputElement;
-  const [todos, setTodos] = createStore<Todo[]>([]);
+  let input!: HTMLInputElement
+  const [todos, setTodos] = createStore<Todo[]>([])
   const addTodo = (text: string) => {
-    setTodos(todos.length, { id: todos.length, text, completed: false });
-  };
+    setTodos(todos.length, { id: todos.length, text, completed: false })
+  }
   const toggleTodo = (id: number) => {
-    setTodos(id, 'completed', (c) => !c);
-  };
+    setTodos(id, 'completed', (c) => !c)
+  }
 
   return (
     <>
@@ -19,9 +19,9 @@ export const TodoList = () => {
         <input placeholder="new todo here" ref={input} />
         <button
           onClick={() => {
-            if (!input.value.trim()) return;
-            addTodo(input.value);
-            input.value = '';
+            if (!input.value.trim()) return
+            addTodo(input.value)
+            input.value = ''
           }}
         >
           Add Todo
@@ -30,7 +30,7 @@ export const TodoList = () => {
       <div>
         <For each={todos}>
           {(todo) => {
-            const { id, text } = todo;
+            const { id, text } = todo
             return (
               <div>
                 <input
@@ -46,10 +46,10 @@ export const TodoList = () => {
                   {text}
                 </span>
               </div>
-            );
+            )
           }}
         </For>
       </div>
     </>
-  );
-};
+  )
+}
