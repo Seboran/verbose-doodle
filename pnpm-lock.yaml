@@ -26,7 +26,7 @@ importers:
     devDependencies:
       '@solidjs/testing-library':
         specifier: ^0.8.5
-        version: 0.8.6(@solidjs/router@0.11.3)(solid-js@1.8.12)
+        version: 0.8.6(@solidjs/router@0.12.4)(solid-js@1.8.12)
       '@testing-library/jest-dom':
         specifier: ^6.2.0
         version: 6.4.1(vitest@1.0.0)
@@ -38,7 +38,7 @@ importers:
         version: 10.4.17(postcss@8.4.33)
       happy-dom:
         specifier: ^13.3.8
-        version: 13.3.8
+        version: 13.6.2
       postcss:
         specifier: ^8.4.33
         version: 8.4.33
@@ -69,7 +69,7 @@ importers:
     devDependencies:
       '@solidjs/testing-library':
         specifier: ^0.8.5
-        version: 0.8.6(@solidjs/router@0.11.3)(solid-js@1.8.12)
+        version: 0.8.6(@solidjs/router@0.12.4)(solid-js@1.8.12)
       '@testing-library/jest-dom':
         specifier: ^6.2.0
         version: 6.4.1(vitest@1.2.2)
@@ -78,7 +78,7 @@ importers:
         version: 5.14.9
       happy-dom:
         specifier: ^13.3.8
-        version: 13.3.8
+        version: 13.6.2
       solid-devtools:
         specifier: ^0.29.2
         version: 0.29.3(solid-js@1.8.12)(vite@5.0.12)
@@ -93,7 +93,7 @@ importers:
         version: 2.9.1(@testing-library/jest-dom@6.4.1)(solid-js@1.8.12)(vite@5.0.12)
       vitest:
         specifier: ^1.2.1
-        version: 1.2.2(happy-dom@13.3.8)
+        version: 1.2.2(happy-dom@13.6.2)
 
 packages:
 
@@ -949,22 +949,22 @@ packages:
       solid-js: 1.8.12
     dev: true
 
-  /@solidjs/router@0.11.3(solid-js@1.8.12):
-    resolution: {integrity: sha512-clSgyvzNnAw5iwnqHFNdzvvgt1eHbg81hu3A7H/qYz0+J5D0XIk7oqaOI7SRWCTnV8Rg9q4K83VV4foCOb+jcw==}
+  /@solidjs/router@0.12.4(solid-js@1.8.12):
+    resolution: {integrity: sha512-2S5QWYmpWSIWn5ei85eoStEMmECERX2BiBkEvmqYDrgX79I8D95YaWVdHbcFGOxISPTY4TP7RxjRiofs/AIFJQ==}
     peerDependencies:
       solid-js: ^1.8.6
     dependencies:
       solid-js: 1.8.12
     dev: true
 
-  /@solidjs/testing-library@0.8.6(@solidjs/router@0.11.3)(solid-js@1.8.12):
+  /@solidjs/testing-library@0.8.6(@solidjs/router@0.12.4)(solid-js@1.8.12):
     resolution: {integrity: sha512-MnDGfUw38SjE+lmCDZ44HeZq5WbDU7s/BTa7uvqv55GKatddoWiJmHanUAbuEtmwMdEv+fFQQzftkqrFXEn1BQ==}
     engines: {node: '>= 14'}
     peerDependencies:
       '@solidjs/router': '>=0.9.0'
       solid-js: '>=1.0.0'
     dependencies:
-      '@solidjs/router': 0.11.3(solid-js@1.8.12)
+      '@solidjs/router': 0.12.4(solid-js@1.8.12)
       '@testing-library/dom': 9.3.4
       solid-js: 1.8.12
     dev: true
@@ -1044,7 +1044,7 @@ packages:
       dom-accessibility-api: 0.6.3
       lodash: 4.17.21
       redent: 3.0.0
-      vitest: 1.2.2(happy-dom@13.3.8)
+      vitest: 1.2.2(happy-dom@13.6.2)
     dev: true
 
   /@types/aria-query@5.0.4:
@@ -1891,8 +1891,8 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: true
 
-  /happy-dom@13.3.8:
-    resolution: {integrity: sha512-RAbq4oYfJNkVan1m1F3jfA4YEyRY0/ASoNvZsNJbuX85jIypidmsz9jQZD7Tqz0VXA2MhAGfcsh5oshwmwNYSg==}
+  /happy-dom@13.6.2:
+    resolution: {integrity: sha512-Ku+wDqcF/KwFA0dI+xIMZd9Jn020RXjuSil/Vz7gu2yhDC3FsDYZ55qqV9k+SGC4opwb4acisXqVSRxUJMlPbQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       entities: 4.5.0
@@ -3263,7 +3263,7 @@ packages:
       - terser
     dev: true
 
-  /vitest@1.2.2(happy-dom@13.3.8):
+  /vitest@1.2.2(happy-dom@13.6.2):
     resolution: {integrity: sha512-d5Ouvrnms3GD9USIK36KG8OZ5bEvKEkITFtnGv56HFaSlbItJuYr7hv2Lkn903+AvRAgSixiamozUVfORUekjw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -3298,7 +3298,7 @@ packages:
       chai: 4.3.10
       debug: 4.3.4
       execa: 8.0.1
-      happy-dom: 13.3.8
+      happy-dom: 13.6.2
       local-pkg: 0.5.0
       magic-string: 0.30.5
       pathe: 1.1.1
